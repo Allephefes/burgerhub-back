@@ -4,7 +4,7 @@ let app = express();
 let mongoose = require('mongoose');
 //var CurrentProduct = require('./ProductModel');
 let bodyParser = require('body-parser');
-let api = require('./api/api');
+let api = require('./api');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use('/api', api);
