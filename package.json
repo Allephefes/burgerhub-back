@@ -4,12 +4,16 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start":"node app.js",
+    "migrate":"npx knex migrate:latest --knexfile api/db/knexfile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "mongoose": "^5.4.16"
+    "knex": "^2.0.0",
+    "mongoose": "^5.4.16",
+    "pg": "^8.7.3"
   }
 }
