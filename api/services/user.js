@@ -25,7 +25,7 @@ class User {
         });
     }
 
-    async deleteUser(id, username, password, auth) {
+    async deleteUser(id) {
         return await db('users').where({
             id:id
         }).del().returning('id');
