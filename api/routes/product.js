@@ -2,12 +2,12 @@ let router = require('express').Router();
 
 let controller = require('../controller');
 
-router.get('/user', controller.user.get);
+router.get('/product', controller.product.get);
 
-router.post('/user', controller.user.create);
+router.post('/product', controller.product.create);
 
-router.put('/user', controller.user.update);
+router.put('/product', controller.product.update);
 
-router.delete('/user', controller.user.delete);
+router.delete('/product', controller.product.delete);
 
 module.exports = router;
